@@ -34,7 +34,7 @@
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><%= link_to "Cars", root_path %></li>
+          <li class="<%= current_page?(root_path) ? 'active' : '' %>"><%= link_to "Cars", root_path %></li>
         </ul>
       </div>
     </div>
